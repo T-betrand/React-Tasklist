@@ -90,7 +90,13 @@ const toggleReminder = async (id) => {
     return (
         <div className='container'>
             <Header />
-            <Tasks tasks={tasks} onDelete={deleteTask} />
+            {tasks.length > 0 ? (
+                <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder} />
+            ) : (
+                'No Tasks To Show at the Moment'
+            )
+            }
+            
         </div>
     )
 }
