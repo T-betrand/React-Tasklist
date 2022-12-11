@@ -6,7 +6,7 @@ import React from 'react'
 
 
 
-const Header = ({ title, onAdd, showAdd }) => {
+const Header = ({ title, onAdd, showAdd}) => {
 
   return (
     <header className='header'>

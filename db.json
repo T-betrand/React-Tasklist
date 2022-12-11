@@ -15,13 +15,13 @@
     {
       "text": "ouhoi",
       "day": "kljnoi",
-      "reminder": true,
+      "reminder": false,
       "id": 3
     },
     {
-      "text": "powowr",
-      "day": "lkwfrk",
-      "reminder": false,
+      "text": "mind my business",
+      "day": "tomorow",
+      "reminder": true,
       "id": 4
     }
   ]
