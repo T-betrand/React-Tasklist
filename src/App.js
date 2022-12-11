@@ -3,6 +3,7 @@ import React, { useState, useEffect }  from 'react';
 //component import 
 import Header from './components/Header';
 import Tasks from './components/Tasks';
+import AddTask from './components/AddTask';
   
 
 const App = () => {
@@ -39,17 +40,18 @@ const fetchTask = async (id) => {
 
 //Add Task
 const addTask = async (task) => {
+    console.log(task)
     const res = await fetch('http://localhost:5000/tasks', {
         method: 'POST',
         headers: {
-            'Content-type': 'appplication/json'
+            'Content-type': 'application/json'
         },
         body: JSON.stringify(task)
     })
 
     const data = await res.json()
 
-    setTasks([...tasks])
+    setTasks([...tasks, data])
 
     // const id = Math.floor(Math.random() * 10000) + 1
     // const newTask = { id, ...task }
@@ -90,6 +92,7 @@ const toggleReminder = async (id) => {
     return (
         <div className='container'>
             <Header />
+            <AddTask onAdd={addTask}/>
             {tasks.length > 0 ? (
                 <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder} />
             ) : (

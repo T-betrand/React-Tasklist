@@ -11,6 +11,18 @@
       "text": "Meeting at school",
       "day": "Feb 6th at 1:30pm",
       "reminder": true
+    },
+    {
+      "text": "ouhoi",
+      "day": "kljnoi",
+      "reminder": true,
+      "id": 3
+    },
+    {
+      "text": "powowr",
+      "day": "lkwfrk",
+      "reminder": false,
+      "id": 4
     }
   ]
 }
