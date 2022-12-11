@@ -13,16 +13,16 @@
       "reminder": true
     },
     {
-      "text": "ouhoi",
-      "day": "kljnoi",
-      "reminder": false,
-      "id": 3
-    },
-    {
       "text": "mind my business",
       "day": "tomorow",
       "reminder": true,
       "id": 4
+    },
+    {
+      "text": "fix the Basement door",
+      "day": "Wednesday 12",
+      "reminder": false,
+      "id": 5
     }
   ]
 }
